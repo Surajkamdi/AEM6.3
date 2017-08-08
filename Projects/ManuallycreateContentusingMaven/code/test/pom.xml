@@ -1,0 +1,676 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ |  Copyright 2014 Adobe Systems Incorporated
+ |
+ |  Licensed under the Apache License, Version 2.0 (the "License");
+ |  you may not use this file except in compliance with the License.
+ |  You may obtain a copy of the License at
+ |
+ |      http://www.apache.org/licenses/LICENSE-2.0
+ |
+ |  Unless required by applicable law or agreed to in writing, software
+ |  distributed under the License is distributed on an "AS IS" BASIS,
+ |  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ |  See the License for the specific language governing permissions and
+ |  limitations under the License.
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.symantec.idam</groupId>
+    <artifactId>idam</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0.0-SNAPSHOT</version>
+    <description>idam</description>
+    
+    <modules>
+        <module>core</module>
+         <module>ui.apps</module>
+        <module>ui.content</module>
+    </modules>
+
+    <properties>
+        <aem.host>localhost</aem.host>
+        <aem.port>4502</aem.port>
+        <aem.publish.host>localhost</aem.publish.host>
+        <aem.publish.port>4503</aem.publish.port>
+        <sling.user>admin</sling.user>
+        <sling.password>admin</sling.password>
+        <vault.user>admin</vault.user>
+        <vault.password>admin</vault.password>
+        
+        <!-- For the following servers, the user names and passwords are stored 
+			in the Jenkins settings.xml file: jenkins/.m2/settings.xml -->
+
+		<!-- Veritas Dev Server -->
+		<cq.dev.vts.author.server>aem-dev-vts-author</cq.dev.vts.author.server>
+		<cq.dev.vts.author.host>10.123.61.176</cq.dev.vts.author.host>
+		<cq.dev.vts.author.port>8850</cq.dev.vts.author.port>
+		<cq.dev.vts.author.protocol>http</cq.dev.vts.author.protocol>
+
+		<cq.dev.vts.publish1.server>aem-dev-vts-publish1</cq.dev.vts.publish1.server>
+		<cq.dev.vts.publish1.host>10.123.61.192</cq.dev.vts.publish1.host>
+		<cq.dev.vts.publish1.port>4503</cq.dev.vts.publish1.port>
+		<cq.dev.vts.publish1.protocol>http</cq.dev.vts.publish1.protocol>
+		
+		<!-- Symantec Dev Server -->
+		<cq.dev.sym.author.server>aem-dev-sym-author</cq.dev.sym.author.server>
+		<cq.dev.sym.author.host>10.46.50.23</cq.dev.sym.author.host>
+		<cq.dev.sym.author.port>4502</cq.dev.sym.author.port>
+		<cq.dev.sym.author.protocol>http</cq.dev.sym.author.protocol>
+
+		<cq.dev.sym.publish1.server>aem-dev-sym-publish1</cq.dev.sym.publish1.server>
+		<cq.dev.sym.publish1.host>tus3aemwebpub02</cq.dev.sym.publish1.host>
+		<cq.dev.sym.publish1.port>4503</cq.dev.sym.publish1.port>
+		<cq.dev.sym.publish1.protocol>http</cq.dev.sym.publish1.protocol>
+		
+		<!-- Symantec QA Server -->
+		<cq.qa.sym.author.server>aem-qa-sym-author</cq.qa.sym.author.server>
+		<cq.qa.sym.author.host>10.44.54.15</cq.qa.sym.author.host>
+		<cq.qa.sym.author.port>4502</cq.qa.sym.author.port>
+		<cq.qa.sym.author.protocol>http</cq.qa.sym.author.protocol>
+
+		<cq.qa.sym.publish1.server>aem-qa-sym-publish1</cq.qa.sym.publish1.server>
+		<cq.qa.sym.publish1.host>10.44.54.17</cq.qa.sym.publish1.host>
+		<cq.qa.sym.publish1.port>4503</cq.qa.sym.publish1.port>
+		<cq.qa.sym.publish1.protocol>http</cq.qa.sym.publish1.protocol>
+		
+		<!-- Symantec UAT Server -->
+		<cq.uat.sym.author.server>aem-uat-sym-author</cq.uat.sym.author.server>
+		<cq.uat.sym.author.host>10.44.38.45</cq.uat.sym.author.host>
+		<cq.uat.sym.author.port>4502</cq.uat.sym.author.port>
+		<cq.uat.sym.author.protocol>http</cq.uat.sym.author.protocol>
+
+		<cq.uat.sym.publish1.server>aem-uat-sym-publish1</cq.uat.sym.publish1.server>
+		<cq.uat.sym.publish1.host>10.44.38.43</cq.uat.sym.publish1.host>
+		<cq.uat.sym.publish1.port>4503</cq.uat.sym.publish1.port>
+		<cq.uat.sym.publish1.protocol>http</cq.uat.sym.publish1.protocol>
+		
+		<!-- Veritas QA Server -->
+		<cq.qa.vts.author.server>aem-qa-vts-author</cq.qa.vts.author.server>
+		<cq.qa.vts.author.host>10.123.38.88</cq.qa.vts.author.host>
+		<cq.qa.vts.author.port>4502</cq.qa.vts.author.port>
+		<cq.qa.vts.author.protocol>http</cq.qa.vts.author.protocol>
+
+		<cq.qa.vts.publish1.server>aem-qa-vts-publish1</cq.qa.vts.publish1.server>
+		<cq.qa.vts.publish1.host>10.123.38.90</cq.qa.vts.publish1.host>
+		<cq.qa.vts.publish1.port>4503</cq.qa.vts.publish1.port>
+		<cq.qa.vts.publish1.protocol>http</cq.qa.vts.publish1.protocol>
+		
+		<!-- Veritas Training Server -->
+		<cq.train.vts.author.server>aem-train-vts-author</cq.train.vts.author.server>
+		<cq.train.vts.author.host>10.123.38.89</cq.train.vts.author.host>
+		<cq.train.vts.author.port>8850</cq.train.vts.author.port>
+		<cq.train.vts.author.protocol>http</cq.train.vts.author.protocol>
+
+		<cq.train.vts.publish1.server>aem-train-vts-publish1</cq.train.vts.publish1.server>
+		<cq.train.vts.publish1.host>10.123.38.91</cq.train.vts.publish1.host>
+		<cq.train.vts.publish1.port>8850</cq.train.vts.publish1.port>
+		<cq.train.vts.publish1.protocol>http</cq.train.vts.publish1.protocol>
+		
+		<!-- Veritas UAT Server -->
+		<cq.uat.vts.author1.server>aem-uat-vts-author1</cq.uat.vts.author1.server>
+		<cq.uat.vts.author1.host>10.123.39.35</cq.uat.vts.author1.host>
+		<cq.uat.vts.author1.port>4502</cq.uat.vts.author1.port>
+		<cq.uat.vts.author1.protocol>http</cq.uat.vts.author1.protocol>
+		
+		<cq.uat.vts.author2.server>aem-uat-vts-author2</cq.uat.vts.author2.server>
+		<cq.uat.vts.author2.host>10.123.39.36</cq.uat.vts.author2.host>
+		<cq.uat.vts.author2.port>4502</cq.uat.vts.author2.port>
+		<cq.uat.vts.author2.protocol>http</cq.uat.vts.author2.protocol>
+
+		<cq.uat.vts.publish1.server>aem-uat-vts-publish1</cq.uat.vts.publish1.server>
+		<cq.uat.vts.publish1.host>10.123.39.37</cq.uat.vts.publish1.host>
+		<cq.uat.vts.publish1.port>4503</cq.uat.vts.publish1.port>
+		<cq.uat.vts.publish1.protocol>http</cq.uat.vts.publish1.protocol>
+		
+		<cq.uat.vts.publish2.server>aem-uat-vts-publish2</cq.uat.vts.publish2.server>
+		<cq.uat.vts.publish2.host>10.123.39.38</cq.uat.vts.publish2.host>
+		<cq.uat.vts.publish2.port>4503</cq.uat.vts.publish2.port>
+		<cq.uat.vts.publish2.protocol>http</cq.uat.vts.publish2.protocol>
+		
+		<!-- Veritas PROD Server -->
+		<cq.prod.vts.author1.server>aem-prod-vts-author1</cq.prod.vts.author1.server>
+		<cq.prod.vts.author1.host>10.123.102.91</cq.prod.vts.author1.host>
+		<cq.prod.vts.author1.port>4502</cq.prod.vts.author1.port>
+		<cq.prod.vts.author1.protocol>http</cq.prod.vts.author1.protocol>
+		
+		<cq.prod.vts.author2.server>aem-prod-vts-author2</cq.prod.vts.author2.server>
+		<cq.prod.vts.author2.host>10.123.102.92</cq.prod.vts.author2.host>
+		<cq.prod.vts.author2.port>4502</cq.prod.vts.author2.port>
+		<cq.prod.vts.author2.protocol>http</cq.prod.vts.author2.protocol>
+
+		<cq.prod.vts.publish1.server>aem-prod-vts-publish1</cq.prod.vts.publish1.server>
+		<cq.prod.vts.publish1.host>10.123.102.93</cq.prod.vts.publish1.host>
+		<cq.prod.vts.publish1.port>4503</cq.prod.vts.publish1.port>
+		<cq.prod.vts.publish1.protocol>http</cq.prod.vts.publish1.protocol>
+		
+		<cq.prod.vts.publish2.server>aem-prod-vts-publish2</cq.prod.vts.publish2.server>
+		<cq.prod.vts.publish2.host>10.123.102.94</cq.prod.vts.publish2.host>
+		<cq.prod.vts.publish2.port>4503</cq.prod.vts.publish2.port>
+		<cq.prod.vts.publish2.protocol>http</cq.prod.vts.publish2.protocol>
+		
+		<cq.prod.vts.publish3.server>aem-prod-vts-publish3</cq.prod.vts.publish3.server>
+		<cq.prod.vts.publish3.host>10.123.102.95</cq.prod.vts.publish3.host>
+		<cq.prod.vts.publish3.port>4503</cq.prod.vts.publish3.port>
+		<cq.prod.vts.publish3.protocol>http</cq.prod.vts.publish3.protocol>
+		
+		<cq.prod.vts.publish4.server>aem-prod-vts-publish4</cq.prod.vts.publish4.server>
+		<cq.prod.vts.publish4.host>10.123.102.96</cq.prod.vts.publish4.host>
+		<cq.prod.vts.publish4.port>4503</cq.prod.vts.publish4.port>
+		<cq.prod.vts.publish4.protocol>http</cq.prod.vts.publish4.protocol>
+		
+		<!-- TEMPORARY BUILD CREDENTIALS... move to jenkins/.m2/settings.xml -->
+				<!-- DEV -->
+		<build-credential-user-dev>admin</build-credential-user-dev>
+		<build-credential-password-dev>admin</build-credential-password-dev>
+		
+				<!-- QA -->		
+		<build-credential-user-qa>admin</build-credential-user-qa>
+		<build-credential-password-qa>admin</build-credential-password-qa>
+		
+		<build-credential-user-qa-publish1>admin</build-credential-user-qa-publish1>
+		<build-credential-password-qa-publish1>admin</build-credential-password-qa-publish1>
+		
+				<!-- Training -->		
+		<build-credential-user-train>admin</build-credential-user-train>
+		<build-credential-password-train>D@m2015</build-credential-password-train>
+		
+		<build-credential-user-train-publish1>admin</build-credential-user-train-publish1>
+		<build-credential-password-train-publish1>admin</build-credential-password-train-publish1>
+		
+				<!-- UAT -->		
+		<build-credential-user-uat-author1>admin</build-credential-user-uat-author1>
+		<build-credential-password-uat-author1>admin</build-credential-password-uat-author1>
+		
+		<build-credential-user-uat-publish1>admin</build-credential-user-uat-publish1>
+		<build-credential-password-uat-publish1>admin</build-credential-password-uat-publish1>
+		
+				<!-- PROD -->		
+		<build-credential-user-prod-author1>jenkins</build-credential-user-prod-author1>
+		<build-credential-password-prod-author1>${PROD_JENKINS}</build-credential-password-prod-author1>
+		
+		<build-credential-user-prod-publish1>admin</build-credential-user-prod-publish1>
+		<build-credential-password-prod-publish1>${PROD_JENKINS}</build-credential-password-prod-publish1>
+		
+    </properties>
+    <build>
+        <plugins>
+            <!-- Maven Release Plugin -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-release-plugin</artifactId>
+                <version>2.5.1</version>
+                <configuration>
+                    <scmCommentPrefix>[maven-scm] :</scmCommentPrefix>
+                    <preparationGoals>clean install</preparationGoals>
+                    <goals>install</goals>
+                    <releaseProfiles>release</releaseProfiles>
+                </configuration>
+            </plugin>
+            <!-- Maven Source Plugin -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+                <version>2.4</version>
+                <inherited>true</inherited>
+            </plugin>
+            <!-- Maven Resources Plugin -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-resources-plugin</artifactId>
+                <configuration>
+                    <encoding>UTF-8</encoding>
+                </configuration>
+            </plugin>
+            <!-- Maven Jar Plugin -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>2.5</version>
+            </plugin>
+            <!-- Maven Enforcer Plugin -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-enforcer-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>enforce-maven</id>
+                        <goals>
+                            <goal>enforce</goal>
+                        </goals>
+                        <configuration>
+                            <rules>
+                                <requireMavenVersion>
+                                    <version>[2.2.1,)</version>
+                                </requireMavenVersion>
+                                <requireJavaVersion>
+                                    <message>Project must be compiled with Java 6 or higher</message>
+                                    <version>1.6.0</version>
+                                </requireJavaVersion>
+                            </rules>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <!-- Maven Compiler Plugin -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.6</source>
+                    <target>1.6</target>
+                    <encoding>UTF-8</encoding>
+                </configuration>
+            </plugin>
+            <!-- Maven IntelliJ IDEA Plugin -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-idea-plugin</artifactId>
+                <version>2.2.1</version>
+                <configuration>
+                    <jdkLevel>1.6</jdkLevel>
+                    <linkModules>true</linkModules>
+                    <downloadSources>true</downloadSources>
+                </configuration>
+            </plugin>
+            <!-- Maven Eclipse Plugin -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-eclipse-plugin</artifactId>
+                <version>2.9</version>
+                <configuration>
+                    <downloadSources>true</downloadSources>
+                </configuration>
+            </plugin>
+            
+            
+		<plugin>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-dependency-plugin</artifactId>
+			<executions>
+				<execution>
+					<id>copy-dependencies</id>
+					<phase>package</phase>
+					<goals>
+						<goal>copy-dependencies</goal>
+					</goals>
+					<configuration>
+						<outputDirectory>C:\ARUN\workspace\IDAM\idam\lib</outputDirectory>
+						<overWriteReleases>false</overWriteReleases>
+						<overWriteSnapshots>false</overWriteSnapshots>
+						<overWriteIfNewer>true</overWriteIfNewer>
+					</configuration>
+				</execution>
+			</executions>
+		</plugin>
+        </plugins>
+        <pluginManagement>
+            <plugins>
+                <!-- Maven Clean Plugin -->
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-clean-plugin</artifactId>
+                    <version>2.6.1</version>
+                </plugin>
+                <!-- Maven Resources Plugin -->
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-resources-plugin</artifactId>
+                    <version>2.7</version>
+                </plugin>
+                <!-- Maven Compiler Plugin -->
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>3.2</version>
+                </plugin>
+                <!-- Apache Felix SCR Plugin -->
+                <plugin>
+                    <groupId>org.apache.felix</groupId>
+                    <artifactId>maven-scr-plugin</artifactId>
+                    <version>1.20.0</version>
+                    <executions>
+                        <execution>
+                            <id>generate-scr-scrdescriptor</id>
+                            <goals>
+                                <goal>scr</goal>
+                            </goals>
+                            <configuration>
+                                <!-- Private service properties for all services. -->
+                                <properties>
+                                    <service.vendor>Adobe</service.vendor>
+                                </properties>
+                            </configuration>
+                        </execution>
+                    </executions>
+                    <configuration>
+                               <outputDirectory>${project.build.directory}/classes</outputDirectory>
+                    </configuration>
+                    <dependencies>
+                        <dependency>
+                            <groupId>org.slf4j</groupId>
+                            <artifactId>slf4j-simple</artifactId>
+                            <version>1.5.11</version>
+                        </dependency>
+                    </dependencies>
+                </plugin>
+                <!-- Maven Installer Plugin -->
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-install-plugin</artifactId>
+                    <version>2.5.2</version>
+                </plugin>
+                <!-- Maven Surefire Plugin -->
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-surefire-plugin</artifactId>
+                    <version>2.18.1</version>
+                </plugin>
+                <!-- Maven Failsafe Plugin -->
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-failsafe-plugin</artifactId>
+                    <version>2.18.1</version>
+                </plugin>
+                <!-- Maven Deploy Plugin -->
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-deploy-plugin</artifactId>
+                    <version>2.8.2</version>
+                </plugin>
+                <!-- Apache Sling Plugin -->
+                <plugin>
+                    <groupId>org.apache.sling</groupId>
+                    <artifactId>maven-sling-plugin</artifactId>
+               <!--       <version>2.1.0</version> -->
+                    <executions>
+                        <execution>
+                            <goals>
+                                <goal>install</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                    <configuration>
+                        <slingUrl>http://${aem.host}:${aem.port}/crx/repository/crx.default</slingUrl>
+                        <usePut>true</usePut>
+                        <failOnError>true</failOnError>
+                    </configuration>
+                </plugin>
+                <!-- Content Package Plugin -->
+                <plugin>
+                    <groupId>com.day.jcr.vault</groupId>
+                    <artifactId>content-package-maven-plugin</artifactId>
+                    <version>0.0.23</version>
+                    <configuration>
+                        <targetURL>http://${aem.host}:${aem.port}/crx/packmgr/service.jsp</targetURL>
+                        <failOnError>true</failOnError>
+                        <failOnMissingEmbed>true</failOnMissingEmbed>
+                    </configuration>
+                </plugin>
+                <!-- Apache Felix Bundle Plugin -->
+                <plugin>
+                    <groupId>org.apache.felix</groupId>
+                    <artifactId>maven-bundle-plugin</artifactId>
+                    <version>2.5.3</version>
+                    <inherited>true</inherited>
+                </plugin>
+                <!-- Maven Enforcer Plugin -->
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-enforcer-plugin</artifactId>
+                    <version>1.4</version>
+                </plugin>
+                <!-- Maven Dependency Plugin -->
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-dependency-plugin</artifactId>
+                    <version>2.10</version>
+                </plugin>
+                <!-- Build Helper Maven Plugin -->
+                <plugin>
+                    <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>build-helper-maven-plugin</artifactId>
+                    <version>1.9.1</version>
+                </plugin>
+                <!--This plugin's configuration is used to store Eclipse m2e settings only. It has no influence on the Maven build itself.-->
+                <plugin>
+                    <groupId>org.eclipse.m2e</groupId>
+                    <artifactId>lifecycle-mapping</artifactId>
+                    <version>1.0.0</version>
+                    <configuration>
+                        <lifecycleMappingMetadata>
+                            <pluginExecutions>
+                                <pluginExecution>
+                                    <pluginExecutionFilter>
+                                        <groupId>org.apache.maven.plugins</groupId>
+                                        <artifactId>maven-enforcer-plugin</artifactId>
+                                        <versionRange>[1.0.0,)</versionRange>
+                                        <goals>
+                                            <goal>enforce</goal>
+                                        </goals>
+                                    </pluginExecutionFilter>
+                                    <action>
+                                        <ignore />
+                                    </action>
+                                </pluginExecution>
+                                <pluginExecution>
+                                    <pluginExecutionFilter>
+                                        <groupId>
+                                            org.apache.maven.plugins
+                                        </groupId>
+                                        <artifactId>
+                                            maven-dependency-plugin
+                                        </artifactId>
+                                        <versionRange>
+                                            [2.2,)
+                                        </versionRange>
+                                        <goals>
+                                            <goal>copy-dependencies</goal>
+                                            <goal>unpack</goal>
+                                        </goals>
+                                    </pluginExecutionFilter>
+                                    <action>
+                                         <ignore />
+                                    </action>
+                                </pluginExecution>
+                                <pluginExecution>
+                                    <pluginExecutionFilter>
+                                        <groupId>
+                                            org.codehaus.mojo
+                                        </groupId>
+                                        <artifactId>
+                                            build-helper-maven-plugin
+                                        </artifactId>
+                                        <versionRange>
+                                            [1.5,)
+                                        </versionRange>
+                                        <goals>
+                                            <goal>
+                                                reserve-network-port
+                                            </goal>
+                                        </goals>
+                                    </pluginExecutionFilter>
+                                    <action>
+                                        <ignore />
+                                    </action>
+                                </pluginExecution>
+                            </pluginExecutions>
+                        </lifecycleMappingMetadata>
+                    </configuration>
+                </plugin>  
+            </plugins>
+        </pluginManagement>
+    </build>
+
+    <profiles>
+        <!-- ====================================================== -->
+        <!-- A D O B E   P U B L I C   P R O F I L E                -->
+        <!-- ====================================================== -->
+        <profile>
+            <id>adobe-public</id>
+
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+
+            <properties>
+                <releaseRepository-Id>adobe-public-releases</releaseRepository-Id>
+                <releaseRepository-Name>Adobe Public Releases</releaseRepository-Name>
+                <releaseRepository-URL>https://repo.adobe.com/nexus/content/groups/public</releaseRepository-URL>
+            </properties>
+
+            <repositories>
+                <repository>
+                    <id>adobe-public-releases</id>
+                    <name>Adobe Public Repository</name>
+                    <url>https://repo.adobe.com/nexus/content/groups/public</url>
+                    <releases>
+                        <enabled>true</enabled>
+                        <updatePolicy>never</updatePolicy>
+                    </releases>
+                    <snapshots>
+                        <enabled>false</enabled>
+                    </snapshots>
+                </repository>
+            </repositories>
+
+            <pluginRepositories>
+                <pluginRepository>
+                    <id>adobe-public-releases</id>
+                    <name>Adobe Public Repository</name>
+                    <url>https://repo.adobe.com/nexus/content/groups/public</url>
+                    <releases>
+                        <enabled>true</enabled>
+                        <updatePolicy>never</updatePolicy>
+                    </releases>
+                    <snapshots>
+                        <enabled>false</enabled>
+                    </snapshots>
+                </pluginRepository>
+            </pluginRepositories>
+        </profile>
+    </profiles>
+
+
+    <!-- ====================================================================== -->
+    <!-- D E P E N D E N C I E S                                                -->
+    <!-- ====================================================================== -->
+    <dependencyManagement>
+        <dependencies>
+            <!-- OSGi Dependencies -->
+            <dependency>
+                <groupId>org.apache.felix</groupId>
+                <artifactId>org.apache.felix.scr</artifactId>
+                <version>1.6.0</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.felix</groupId>
+                <artifactId>org.apache.felix.scr.annotations</artifactId>
+                <version>1.9.6</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+        <groupId>biz.aQute</groupId>
+        <artifactId>bndlib</artifactId>
+        <version>1.50.0</version>
+        <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.osgi</groupId>
+                <artifactId>org.osgi.core</artifactId>
+                <version>4.2.0</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.osgi</groupId>
+                <artifactId>org.osgi.compendium</artifactId>
+                <version>4.2.0</version>
+                <scope>provided</scope>
+            </dependency>
+            <!-- Logging Dependencies -->
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-api</artifactId>
+                <version>1.5.11</version>
+                <scope>provided</scope>
+            </dependency>
+            <!-- Apache Sling Dependencies -->
+            <dependency>
+                <groupId>com.adobe.aem</groupId>
+              <!--    <artifactId>aem-api</artifactId>
+                <version>6.0.0.1</version>-->
+                <artifactId>uber-jar</artifactId>
+    			<version>6.3.0</version>
+                <scope>provided</scope>
+            </dependency>
+           
+            <!-- Servlet API -->
+            <dependency>
+                <groupId>javax.servlet</groupId>
+                <artifactId>servlet-api</artifactId>
+                <version>2.4</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>javax.servlet.jsp</groupId>
+                <artifactId>jsp-api</artifactId>
+                <version>2.1</version>
+                <scope>provided</scope>
+            </dependency>
+            <!-- JCR -->
+            <dependency>
+                <groupId>javax.jcr</groupId>
+                <artifactId>jcr</artifactId>
+                <version>2.0</version>
+                <scope>provided</scope>
+            </dependency>
+            <!-- Testing -->
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>4.8.2</version>
+                <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-simple</artifactId>
+                <version>1.5.11</version>
+                <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.mockito</groupId>
+                <artifactId>mockito-all</artifactId>
+                <version>1.9.5</version>
+                <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>junit-addons</groupId>
+                <artifactId>junit-addons</artifactId>
+                <version>1.4</version>
+                <scope>test</scope>
+            </dependency>
+            <dependency>
+	    	<groupId>commons-fileupload</groupId>
+	    	<artifactId>commons-fileupload</artifactId>
+	    	<version>1.2</version>
+		    </dependency>
+		    <dependency>
+	            <groupId>commons-codec</groupId>
+	            <artifactId>commons-codec</artifactId>
+	            <version>1.4</version>
+	        </dependency>
+		    <dependency>
+		    	<groupId>commons-lang</groupId>
+		    	<artifactId>commons-lang</artifactId>
+		    	<version>2.4</version>
+		    </dependency>
+		    <dependency>
+		    	<groupId>org.apache.directory.studio</groupId>
+		    	<artifactId>org.apache.commons.io</artifactId>
+		    	<version>2.4</version>
+		    </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+</project>

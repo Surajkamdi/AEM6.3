@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<workspaceFilter version="1.0">
+    <filter root="/content/dam/image1" />
+    <filter root="/content/dam/image2" />
+    <filter root="/content/dam/image3" />
+</workspaceFilter>

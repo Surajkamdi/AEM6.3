@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>test - UI content</comment>
+<entry key="createdBy">Arunkumar_Sadhasivam</entry>
+<entry key="name">test.ui.content</entry>
+<entry key="created">2017-07-15T13:37:42.724-0700</entry>
+<entry key="groupId">com.test.adomecontentzip</entry>
+<entry key="version">1.0.0-SNAPSHOT</entry>
+<entry key="requiresRoot">false</entry>
+<entry key="group">test</entry>
+<entry key="description">UI content package for idam</entry>
+<entry key="artifactId">test.ui.content</entry>
+<entry key="path">/etc/packages/test/test.ui.content.zip</entry>
+</properties>

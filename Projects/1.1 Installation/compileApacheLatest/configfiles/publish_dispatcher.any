@@ -1,0 +1,34 @@
+ 
+ 2)publish_dispatcher.any
+ ========================
+ make sure that host is pointing to aem instance.
+ 
+ /renders
+      {
+      /rend01
+        {
+        # Hostname or IP of the render
+        /hostname "10.0.5.23"
+        # Port of the render
+        /port "4502"
+        # Connect timeout in milliseconds, 0 to wait indefinitely
+        # /timeout "0"
+        }
+      }
+
+To set the cache do following:
+=================================
+
+      /docroot "/apps/apache/aem/cache"
+
+
+ # The cache section regulates what responses will be cached and where.
+    /cache
+      {
+      # The docroot must be equal to the document root of the webserver. The
+      # dispatcher will store files relative to this directory and subsequent
+      # requests may be "declined" by the dispatcher, allowing the webserver
+      # to deliver them just like static files.
+      /docroot "/apps/apache/aem/cache"
+
+      }
