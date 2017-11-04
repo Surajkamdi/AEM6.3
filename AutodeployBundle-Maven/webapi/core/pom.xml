@@ -1,0 +1,28 @@
+<profile>
+      <id>QA-Webapi</id>
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>org.apache.sling</groupId>
+            <artifactId>maven-sling-plugin</artifactId>
+            <executions>
+              <execution>
+                <id>install-bundle-author</id>
+                <goals>
+                  <goal>install</goal>
+                </goals>
+                <configuration>
+                  <slingUrl>${cq.webapi.author.protocol}://${cq.webapi.author.host}:${cq.webapi.author.port}/crx/repository/crx.default</slingUrl>
+                  <slingUrlSuffix>/apps/webapi/install/</slingUrlSuffix>
+                  <usePut>true</usePut>
+                  <failOnError>true</failOnError>
+                  <user>${build-username-webapi}</user>
+                  <password>${build-password-webapi}</password>
+                </configuration>
+              </execution>
+              
+            </executions>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>

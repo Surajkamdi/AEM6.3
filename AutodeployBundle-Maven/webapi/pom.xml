@@ -1,0 +1,19 @@
+
+		
+    <properties>
+        <cq.qa.author.host>qa.test.com</cq.qa.author.host>
+        <cq.qa.author.port>4502</cq.qa.author.port>
+        <cq.qa.author.protocol>http</cq.qa.author.protocol> 
+
+        <cq.qa.publish1.host>qa.publish1.com</cq.qa.publish1.host>
+        <cq.qa.publish1.port>4503</cq.qa.publish1.port>
+        <cq.qa.publish1.protocol>http</cq.qa.publish1.protocol> 
+
+
+        <cq.qa.publish2.host>qa.publish2.com</cq.qa.publish2.host>
+        <cq.qa.publish2.port>4503</cq.qa.publish2.port>
+        <cq.qa.publish2.protocol>http</cq.qa.publish2.protocol>  
+	    <build-username-webapi>admin</build-username-webapi>
+	    <build-password-webapi>admin</build-password-webapi>
+		</properties>
+		

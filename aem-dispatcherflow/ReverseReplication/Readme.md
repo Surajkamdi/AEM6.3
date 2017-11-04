@@ -225,4 +225,3 @@ publisher and some content for internal publisher for company specific secure in
                      /type "allow"
                   }
                }
-

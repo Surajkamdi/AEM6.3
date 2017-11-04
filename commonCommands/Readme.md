@@ -9,6 +9,50 @@ output:
 Red Hat Enterprise Linux Server release 6.9 (Santiago)
 
 
+To exclude logs in tar
+=======================
+
+[ADMIN@SYSETM apps]$ tar -cvf crx-quickstart.tar  ./crx-quickstart --exclude="./crx-quickstart/logs"
+
+OUTPUT:
+========
+
+create tar without logs
+ 
+To change environment variables
+================================
+
+
+[ADMIN@SYSTEM11 /]$ pwd
+/
+[ADMIN@SYSTEM11 /]$ ~/.bash_profile
+
+
+[ADMIN@SYSTEM11  /]$ nano ~/.bash_profile
+
+OUTPUT:
+=======
+
+            # Get the aliases and functions
+            if [ -f ~/.bashrc ]; then
+                    . ~/.bashrc
+            fi
+
+            # User specific environment and startup programs
+
+            PATH=$PATH:$HOME/bin
+            export JAVA_HOME=/apps/jdk1.6.0/bin
+            export PATH=$PATH:$JAVA_HOME
+            export PATH
+
+
+/home/admin/.bash_profile
+
+just type below command in anywhere in unix box.
+>~/.bash_profile
+
+
+
 To check http apache service dispatcher is up and running.
 ==========================================================
 admin> ps -ef | grep httpd 

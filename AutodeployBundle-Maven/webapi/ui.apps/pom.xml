@@ -1,0 +1,45 @@
+<profile>
+      <id>QA-Webapi</id>
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>com.day.jcr.vault</groupId>
+            <artifactId>content-package-maven-plugin</artifactId>
+            <executions>
+              <execution>
+                <id>install-package-author</id>
+                <goals>
+                  <goal>install</goal>
+                </goals>
+                <configuration>
+                  <targetURL>${cq.webapi.author.protocol}://${cq.webapi.author.host}:${cq.webapi.author.port}/crx/packmgr/service.jsp</targetURL>
+                  <failOnError>true</failOnError>
+                  <failOnMissingEmbed>true</failOnMissingEmbed>
+                  <userId>${build-user-webapi}</userId>
+                  <password>${build-password-webapi}</password>
+                </configuration>
+              </execution>
+              
+              <execution>
+                <id>install-package-publish1</id>
+                <goals>
+                  <goal>install</goal>
+                </goals>
+                <configuration>
+                  <targetURL>${cq.webapi.publish.protocol}://${cq.webapi.publish.host}:${cq.webapi.publish.port}/crx/packmgr/service.jsp</targetURL>
+                  <failOnError>true</failOnError>
+                  <failOnMissingEmbed>true</failOnMissingEmbed>
+                  <userId>${build-user-webapi}</userId>
+                  <password>${build-password-webapi}</password>
+                </configuration>
+              </execution>
+              
+              
+            </executions>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
+
+    
+    
