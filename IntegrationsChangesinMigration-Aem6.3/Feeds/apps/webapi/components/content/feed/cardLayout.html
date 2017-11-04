@@ -1,0 +1,35 @@
+<div data-sly-use.feeditems="com.core.webapi.Feed" data-sly-unwrap>
+		<ul class="card-group card-grid-display" style="display: block;">
+		<div data-sly-list.feeditem="${feeditems.feedItems}" data-sly-unwrap>
+    <li>
+				<!-- News Item -->
+				<div class="news-item">
+					<div data-sly-test="${properties.urltarget=='newwindow'}">
+						<a href="#"><img class="wrapImg" src="${feeditem.imageURL @ context='html'}"></a>
+						<h4 data-sly-test="${feeditem.title}">
+							<a href="#" title="${feeditem.title @context='html'}" 
+              onclick="window.open('${ feeditem.link @context='uri'}','_blank', 'toolbar=0,location=0,menubar=0');">${feeditem.titleCut}</a>
+						</h4>
+					 
+					</div>
+					
+					<div data-sly-test="${properties.urltarget=='newtab'}">
+						<a href="#"><img class="wrapImg" src="${feeditem.imageURL @ context='html'}"></a>
+						
+						<p>
+							<a href="${feeditem.link}" target="_blank">${feeditem.descriptionCut @context='html'} </a>
+						</p>
+					</div>
+					
+					<div data-sly-test="${properties.urltarget=='none'}">
+					
+						<p>
+							<a href="${feeditem.link}">${feeditem.descriptionCut @context='html'} </a>
+						</p>
+					</div>
+				</div> <!-- /News Item -->
+			</li>
+    </div>
+    </ul>
+</div>
+	

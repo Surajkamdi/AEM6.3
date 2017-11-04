@@ -1,0 +1,24 @@
+
+ 	<div class="main-content">
+		<!-- Main Content -->
+		<div data-sly-test="${!wcmmode.edit}" data-sly-unwrap>
+			<div data-sly-resource="${ @path='bodyparsys', resourceType='wcm/foundation/components/parsys'}"></div>
+		</div>
+    	<div data-sly-test="${wcmmode.edit}" data-sly-unwrap>
+        Body Parsys Start
+			<div data-sly-resource="${ @path='bodyparsys', resourceType='foundation/components/parsys'}"></div>
+        Body Parsys End
+    	</div>
+		<!-- /Main Content -->
+        <!-- Persistent Contact Sales -->
+		<div data-sly-test="${wcmmode.edit}" data-sly-unwrap>
+			Persistent Contact Sales IParsys Start
+			<div data-sly-resource="${ @path='feedIparsys', resourceType='foundation/components/iparsys'}"></div>
+			Persistent Contact Sales IParsys End
+			<!-- /Persistent Contact Sales -->
+		</div>
+		<div data-sly-test="${!wcmmode.edit}" data-sly-unwrap>
+			<div data-sly-resource="${ @path='feedIparsys', resourceType='wcm/foundation/components/iparsys'}" data-sly-unwrap></div>
+		</div>
+	</div>
+ 

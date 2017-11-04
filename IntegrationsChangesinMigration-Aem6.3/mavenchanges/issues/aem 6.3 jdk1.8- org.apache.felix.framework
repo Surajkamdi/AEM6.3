@@ -1,0 +1,531 @@
+Exported Packages	javax.accessibility,version=0.0.0.1_008_JavaSE
+javax.activity,version=0.0.0.1_008_JavaSE
+javax.annotation,version=0.0.0.1_008_JavaSE
+javax.annotation.processing,version=0.0.0.1_008_JavaSE
+javax.crypto,version=0.0.0.1_008_JavaSE
+javax.crypto.interfaces,version=0.0.0.1_008_JavaSE
+javax.crypto.spec,version=0.0.0.1_008_JavaSE
+javax.imageio,version=0.0.0.1_008_JavaSE
+javax.imageio.event,version=0.0.0.1_008_JavaSE
+javax.imageio.metadata,version=0.0.0.1_008_JavaSE
+javax.imageio.plugins.bmp,version=0.0.0.1_008_JavaSE
+javax.imageio.plugins.jpeg,version=0.0.0.1_008_JavaSE
+javax.imageio.spi,version=0.0.0.1_008_JavaSE
+javax.imageio.stream,version=0.0.0.1_008_JavaSE
+javax.jws,version=0.0.0.fragment_ws
+javax.jws.soap,version=0.0.0.fragment_ws
+javax.lang.model,version=0.0.0.1_008_JavaSE
+javax.lang.model.element,version=0.0.0.1_008_JavaSE
+javax.lang.model.type,version=0.0.0.1_008_JavaSE
+javax.lang.model.util,version=0.0.0.1_008_JavaSE
+javax.management,version=0.0.0.1_008_JavaSE
+javax.management.loading,version=0.0.0.1_008_JavaSE
+javax.management.modelmbean,version=0.0.0.1_008_JavaSE
+javax.management.monitor,version=0.0.0.1_008_JavaSE
+javax.management.openmbean,version=0.0.0.1_008_JavaSE
+javax.management.relation,version=0.0.0.1_008_JavaSE
+javax.management.remote,version=0.0.0.1_008_JavaSE
+javax.management.remote.rmi,version=0.0.0.1_008_JavaSE
+javax.management.timer,version=0.0.0.1_008_JavaSE
+javax.naming,version=0.0.0.1_008_JavaSE
+javax.naming.directory,version=0.0.0.1_008_JavaSE
+javax.naming.event,version=0.0.0.1_008_JavaSE
+javax.naming.ldap,version=0.0.0.1_008_JavaSE
+javax.naming.spi,version=0.0.0.1_008_JavaSE
+javax.net,version=0.0.0.1_008_JavaSE
+javax.net.ssl,version=0.0.0.1_008_JavaSE
+javax.print,version=0.0.0.1_008_JavaSE
+javax.print.attribute,version=0.0.0.1_008_JavaSE
+javax.print.attribute.standard,version=0.0.0.1_008_JavaSE
+javax.print.event,version=0.0.0.1_008_JavaSE
+javax.rmi,version=0.0.0.1_008_JavaSE
+javax.rmi.CORBA,version=0.0.0.1_008_JavaSE
+javax.rmi.ssl,version=0.0.0.1_008_JavaSE
+javax.script,version=0.0.0.1_008_JavaSE
+javax.security.auth,version=0.0.0.1_008_JavaSE
+javax.security.auth.callback,version=0.0.0.1_008_JavaSE
+javax.security.auth.kerberos,version=0.0.0.1_008_JavaSE
+javax.security.auth.login,version=0.0.0.1_008_JavaSE
+javax.security.auth.spi,version=0.0.0.1_008_JavaSE
+javax.security.auth.x500,version=0.0.0.1_008_JavaSE
+javax.security.cert,version=0.0.0.1_008_JavaSE
+javax.security.sasl,version=0.0.0.1_008_JavaSE
+javax.sound.midi,version=0.0.0.1_008_JavaSE
+javax.sound.midi.spi,version=0.0.0.1_008_JavaSE
+javax.sound.sampled,version=0.0.0.1_008_JavaSE
+javax.sound.sampled.spi,version=0.0.0.1_008_JavaSE
+javax.sql,version=0.0.0.1_008_JavaSE
+javax.sql.rowset,version=0.0.0.1_008_JavaSE
+javax.sql.rowset.serial,version=0.0.0.1_008_JavaSE
+javax.sql.rowset.spi,version=0.0.0.1_008_JavaSE
+javax.swing,version=0.0.0.1_008_JavaSE
+javax.swing.border,version=0.0.0.1_008_JavaSE
+javax.swing.colorchooser,version=0.0.0.1_008_JavaSE
+javax.swing.event,version=0.0.0.1_008_JavaSE
+javax.swing.filechooser,version=0.0.0.1_008_JavaSE
+javax.swing.plaf,version=0.0.0.1_008_JavaSE
+javax.swing.plaf.basic,version=0.0.0.1_008_JavaSE
+javax.swing.plaf.metal,version=0.0.0.1_008_JavaSE
+javax.swing.plaf.multi,version=0.0.0.1_008_JavaSE
+javax.swing.plaf.nimbus,version=0.0.0.1_008_JavaSE
+javax.swing.plaf.synth,version=0.0.0.1_008_JavaSE
+javax.swing.table,version=0.0.0.1_008_JavaSE
+javax.swing.text,version=0.0.0.1_008_JavaSE
+javax.swing.text.html,version=0.0.0.1_008_JavaSE
+javax.swing.text.html.parser,version=0.0.0.1_008_JavaSE
+javax.swing.text.rtf,version=0.0.0.1_008_JavaSE
+javax.swing.tree,version=0.0.0.1_008_JavaSE
+javax.swing.undo,version=0.0.0.1_008_JavaSE
+javax.tools,version=0.0.0.1_008_JavaSE
+javax.xml,version=0.0.0.fragment_xml
+javax.xml.bind,version=2.1.0
+javax.xml.bind.annotation,version=2.1.0
+javax.xml.bind.annotation.adapters,version=2.1.0
+javax.xml.bind.attachment,version=2.1.0
+javax.xml.bind.helpers,version=2.1.0
+javax.xml.bind.util,version=2.1.0
+javax.xml.crypto,version=0.0.0.fragment_xml
+javax.xml.crypto.dom,version=0.0.0.fragment_xml
+javax.xml.crypto.dsig,version=0.0.0.fragment_xml
+javax.xml.crypto.dsig.dom,version=0.0.0.fragment_xml
+javax.xml.crypto.dsig.keyinfo,version=0.0.0.fragment_xml
+javax.xml.crypto.dsig.spec,version=0.0.0.fragment_xml
+javax.xml.datatype,version=2.1.0
+javax.xml.namespace,version=0.0.0.fragment_xml
+javax.xml.parsers,version=0.0.0.fragment_xml
+javax.xml.soap,version=0.0.0.fragment_ws
+javax.xml.stream,version=1.0.0
+javax.xml.stream.events,version=1.0.0
+javax.xml.stream.util,version=1.0.0
+javax.xml.transform,version=0.0.0.fragment_xml
+javax.xml.transform.dom,version=0.0.0.fragment_xml
+javax.xml.transform.sax,version=0.0.0.fragment_xml
+javax.xml.transform.stax,version=0.0.0.fragment_xml
+javax.xml.transform.stream,version=0.0.0.fragment_xml
+javax.xml.validation,version=0.0.0.fragment_xml
+javax.xml.ws,version=2.1.0
+javax.xml.ws.handler,version=2.1.0
+javax.xml.ws.handler.soap,version=2.1.0
+javax.xml.ws.http,version=2.1.0
+javax.xml.ws.soap,version=2.1.0
+javax.xml.ws.spi,version=2.1.0
+javax.xml.ws.spi.http,version=2.1.0
+javax.xml.ws.wsaddressing,version=2.1.0
+javax.xml.xpath,version=0.0.0.fragment_xml
+org.apache.sling.launchpad.api,version=1.2.0
+org.ietf.jgss,version=0.0.0.1_008_JavaSE
+org.omg.CORBA,version=0.0.0.1_008_JavaSE
+org.omg.CORBA.DynAnyPackage,version=0.0.0.1_008_JavaSE
+org.omg.CORBA.ORBPackage,version=0.0.0.1_008_JavaSE
+org.omg.CORBA.TypeCodePackage,version=0.0.0.1_008_JavaSE
+org.omg.CORBA.portable,version=0.0.0.1_008_JavaSE
+org.omg.CORBA_2_3,version=0.0.0.1_008_JavaSE
+org.omg.CORBA_2_3.portable,version=0.0.0.1_008_JavaSE
+org.omg.CosNaming,version=0.0.0.1_008_JavaSE
+org.omg.CosNaming.NamingContextExtPackage,version=0.0.0.1_008_JavaSE
+org.omg.CosNaming.NamingContextPackage,version=0.0.0.1_008_JavaSE
+org.omg.Dynamic,version=0.0.0.1_008_JavaSE
+org.omg.DynamicAny,version=0.0.0.1_008_JavaSE
+org.omg.DynamicAny.DynAnyFactoryPackage,version=0.0.0.1_008_JavaSE
+org.omg.DynamicAny.DynAnyPackage,version=0.0.0.1_008_JavaSE
+org.omg.IOP,version=0.0.0.1_008_JavaSE
+org.omg.IOP.CodecFactoryPackage,version=0.0.0.1_008_JavaSE
+org.omg.IOP.CodecPackage,version=0.0.0.1_008_JavaSE
+org.omg.Messaging,version=0.0.0.1_008_JavaSE
+org.omg.PortableInterceptor,version=0.0.0.1_008_JavaSE
+org.omg.PortableInterceptor.ORBInitInfoPackage,version=0.0.0.1_008_JavaSE
+org.omg.PortableServer,version=0.0.0.1_008_JavaSE
+org.omg.PortableServer.CurrentPackage,version=0.0.0.1_008_JavaSE
+org.omg.PortableServer.POAManagerPackage,version=0.0.0.1_008_JavaSE
+org.omg.PortableServer.POAPackage,version=0.0.0.1_008_JavaSE
+org.omg.PortableServer.ServantLocatorPackage,version=0.0.0.1_008_JavaSE
+org.omg.PortableServer.portable,version=0.0.0.1_008_JavaSE
+org.omg.SendingContext,version=0.0.0.1_008_JavaSE
+org.omg.stub.java.rmi,version=0.0.0.1_008_JavaSE
+org.osgi.dto,version=1.0.0
+org.osgi.framework,version=1.8.0
+org.osgi.framework.dto,version=1.8.0
+org.osgi.framework.hooks.bundle,version=1.1.0
+org.osgi.framework.hooks.resolver,version=1.0.0
+org.osgi.framework.hooks.service,version=1.1.0
+org.osgi.framework.hooks.weaving,version=1.1.0
+org.osgi.framework.launch,version=1.2.0
+org.osgi.framework.namespace,version=1.1.0
+org.osgi.framework.startlevel,version=1.0.0
+org.osgi.framework.startlevel.dto,version=1.0.0
+org.osgi.framework.wiring,version=1.2.0
+org.osgi.framework.wiring.dto,version=1.2.0
+org.osgi.resource,version=1.0.0
+org.osgi.resource.dto,version=1.0.0
+org.osgi.service.packageadmin,version=1.2.0
+org.osgi.service.resolver,version=1.0.0
+org.osgi.service.startlevel,version=1.1.0
+org.osgi.service.url,version=1.0.0
+org.osgi.util.tracker,version=1.5.1
+org.w3c.dom,version=0.0.0.fragment_xml
+org.w3c.dom.bootstrap,version=0.0.0.fragment_xml
+org.w3c.dom.css,version=0.0.0.fragment_xml
+org.w3c.dom.events,version=0.0.0.fragment_xml
+org.w3c.dom.html,version=0.0.0.fragment_xml
+org.w3c.dom.ls,version=0.0.0.fragment_xml
+org.w3c.dom.ranges,version=0.0.0.fragment_xml
+org.w3c.dom.stylesheets,version=0.0.0.fragment_xml
+org.w3c.dom.traversal,version=0.0.0.fragment_xml
+org.w3c.dom.views,version=0.0.0.fragment_xml
+org.w3c.dom.xpath,version=0.0.0.fragment_xml
+org.xml.sax,version=0.0.0.fragment_xml
+org.xml.sax.ext,version=0.0.0.fragment_xml
+org.xml.sax.helpers,version=0.0.0.fragment_xml
+Imported Packages	None
+Importing Bundles	FORCE (524)
+PDFServices_extraction (83)
+PDFServices_manipulations (512)
+PDFServices_security (513)
+UPIM-NEW (525)
+com.adobe.aemds.formsmanager.adobe-aemds-formsanddocuments-core (164)
+com.adobe.aemds.guide.aemds-guide-core (169)
+com.adobe.aemds.guide.aemds-guide-core-impl (170)
+com.adobe.cq.cdn.cdn-rewriter (173)
+com.adobe.cq.com.adobe.cq.editor (175)
+com.adobe.cq.com.adobe.cq.msm.ui (177)
+com.adobe.cq.com.adobe.cq.sites.ui (185)
+com.adobe.cq.commerce.cq-commerce-core (271)
+com.adobe.cq.commerce.cq-commerce-pim (272)
+com.adobe.cq.core.wcm.components.core (517)
+com.adobe.cq.cq-analytics-integration (267)
+com.adobe.cq.cq-cloudservices-provisioning (270)
+com.adobe.cq.cq-dam-mac-sync (290)
+com.adobe.cq.cq-dam-mac-sync-helper (291)
+com.adobe.cq.cq-deserialization-firewall (22)
+com.adobe.cq.cq-experience-fragments (304)
+com.adobe.cq.cq-experience-fragments-social (305)
+com.adobe.cq.cq-experiencelog (306)
+com.adobe.cq.cq-history (309)
+com.adobe.cq.cq-pre-upgrade-backup (61)
+com.adobe.cq.cq-pre-upgrade-cleanup (62)
+com.adobe.cq.cq-product-info-provider (63)
+com.adobe.cq.cq-scheduled-exporter (341)
+com.adobe.cq.cq-searchpromote-integration (345)
+com.adobe.cq.cq-security-hc (348)
+com.adobe.cq.cq-socialmedia-integration (404)
+com.adobe.cq.cq-target-integration (408)
+com.adobe.cq.cq-targetrecommendations (409)
+com.adobe.cq.dam.cq-dam-svg-handler (297)
+com.adobe.cq.dam.cq-scene7-imaging (340)
+com.adobe.cq.inbox.cq-inbox-ui (311)
+com.adobe.cq.media.cq-media-publishing-dps-fp-core (322)
+com.adobe.cq.media.cq-media-publishing-dps-integration (323)
+com.adobe.cq.mobile.cq-mobile-core (325)
+com.adobe.cq.mobile.cq-mobile-dps (148)
+com.adobe.cq.mobile.cq-mobile-phonegap-build (150)
+com.adobe.cq.mobile.cq-mobile-ui (151)
+com.adobe.cq.sample.we.retail.core (519)
+com.adobe.cq.screens.com.adobe.cq.screens (182)
+com.adobe.cq.screens.com.adobe.cq.screens.dcc (183)
+com.adobe.cq.screens.com.adobe.cq.screens.sessions (184)
+com.adobe.cq.sightly.cq-wcm-sightly-extension (425)
+com.adobe.cq.social.cq-social-activitystreams (349)
+com.adobe.cq.social.cq-social-as-provider (350)
+com.adobe.cq.social.cq-social-badging-api (351)
+com.adobe.cq.social.cq-social-badging-basic-impl (352)
+com.adobe.cq.social.cq-social-badging-impl (353)
+com.adobe.cq.social.cq-social-calendar-impl (355)
+com.adobe.cq.social.cq-social-commons (356)
+com.adobe.cq.social.cq-social-commons-oauth (357)
+com.adobe.cq.social.cq-social-console (358)
+com.adobe.cq.social.cq-social-enablement-impl (361)
+com.adobe.cq.social.cq-social-graph-api (366)
+com.adobe.cq.social.cq-social-group (368)
+com.adobe.cq.social.cq-social-handlebars (369)
+com.adobe.cq.social.cq-social-ideation-api (370)
+com.adobe.cq.social.cq-social-ideation-impl (371)
+com.adobe.cq.social.cq-social-jcr-provider (372)
+com.adobe.cq.social.cq-social-journal (374)
+com.adobe.cq.social.cq-social-livefyre (375)
+com.adobe.cq.social.cq-social-members-impl (377)
+com.adobe.cq.social.cq-social-messaging-api (378)
+com.adobe.cq.social.cq-social-messaging-impl (379)
+com.adobe.cq.social.cq-social-notifications-api (382)
+com.adobe.cq.social.cq-social-rdb-provider (386)
+com.adobe.cq.social.cq-social-review (388)
+com.adobe.cq.social.cq-social-scf-api (389)
+com.adobe.cq.social.cq-social-scf-impl (390)
+com.adobe.cq.social.cq-social-scoring-api (391)
+com.adobe.cq.social.cq-social-scoring-impl (393)
+com.adobe.cq.social.cq-social-serviceusers-impl (395)
+com.adobe.cq.social.cq-social-srp-api (396)
+com.adobe.cq.social.cq-social-srp-impl (397)
+com.adobe.cq.social.cq-social-sync (398)
+com.adobe.cq.social.cq-social-tally (399)
+com.adobe.cq.social.cq-social-ugc-search-collections (401)
+com.adobe.cq.social.cq-social-ugcbase-api (402)
+com.adobe.cq.social.cq-social-ugcbase-impl (403)
+com.adobe.dam.cq-dam-cfm-impl (283)
+com.adobe.granite.apicontroller (188)
+com.adobe.granite.asset.core (190)
+com.adobe.granite.auth.oauth (193)
+com.adobe.granite.auth.saml (194)
+com.adobe.granite.auth.sso (195)
+com.adobe.granite.bundles.hc.impl (196)
+com.adobe.granite.comments (198)
+com.adobe.granite.conf.ui.core (200)
+com.adobe.granite.contexthub.commons (202)
+com.adobe.granite.crx-explorer (204)
+com.adobe.granite.crx-packagemgr (205)
+com.adobe.granite.crxde-lite (206)
+com.adobe.granite.crypto (1)
+com.adobe.granite.crypto.config (20)
+com.adobe.granite.crypto.extension (207)
+com.adobe.granite.crypto.file (21)
+com.adobe.granite.crypto.jcr (208)
+com.adobe.granite.crypto.keystore (209)
+com.adobe.granite.csrf (210)
+com.adobe.granite.distribution.core (211)
+com.adobe.granite.dropwizard.metrics (56)
+com.adobe.granite.gibson (73)
+com.adobe.granite.infocollector (68)
+com.adobe.granite.installer.factory.packages (122)
+com.adobe.granite.jetty.ssl (215)
+com.adobe.granite.jmx (105)
+com.adobe.granite.license (69)
+com.adobe.granite.logging (216)
+com.adobe.granite.maintenance.core (217)
+com.adobe.granite.maintenance.oak (152)
+com.adobe.granite.monitoring.core (218)
+com.adobe.granite.oauth.jwt (219)
+com.adobe.granite.oauth.server (153)
+com.adobe.granite.offloading.core (220)
+com.adobe.granite.omnisearch.core (222)
+com.adobe.granite.osgi.wrapper.guava (90)
+com.adobe.granite.poi (74)
+com.adobe.granite.queries (224)
+com.adobe.granite.repository (91)
+com.adobe.granite.repository.hc.impl (229)
+com.adobe.granite.requests.logging (230)
+com.adobe.granite.resourcestatus (232)
+com.adobe.granite.rest.api (233)
+com.adobe.granite.rngom (75)
+com.adobe.granite.scribe (235)
+com.adobe.granite.security.user (237)
+com.adobe.granite.socketio (239)
+com.adobe.granite.startup (2)
+com.adobe.granite.tagsoup (76)
+com.adobe.granite.threaddump (243)
+com.adobe.granite.translation.api (245)
+com.adobe.granite.translation.connector.msft.core (246)
+com.adobe.granite.ui.clientlibs (248)
+com.adobe.granite.ui.clientlibs.processor.gcc (250)
+com.adobe.granite.ui.commons (251)
+com.adobe.granite.workflow.console (253)
+com.adobe.granite.workflow.core (129)
+com.adobe.livecycle.formsportal-bundle (166)
+com.adobe.suitetech.nativecomm (255)
+com.adobe.xmp.core (79)
+com.adobe.xmp.schema.model (80)
+com.adobe.xmp.schema.rngparser (85)
+com.adobe.xmp.schema.service (86)
+com.adobe.xmp.xmpcore (89)
+com.day.commons.osgi.wrapper.commons-email (256)
+com.day.commons.osgi.wrapper.commons-httpclient (130)
+com.day.commons.osgi.wrapper.fop (257)
+com.day.commons.osgi.wrapper.simple-jndi (258)
+com.day.cq.cq-authhandler (191)
+com.day.cq.cq-commons (273)
+com.day.cq.cq-compat-codeupgrade (144)
+com.day.cq.cq-compat-commons-auth (274)
+com.day.cq.cq-compat-configupdate (23)
+com.day.cq.cq-content-sync (277)
+com.day.cq.cq-i18n (214)
+com.day.cq.cq-jcrclustersupport (123)
+com.day.cq.cq-mailer (313)
+com.day.cq.cq-notifcation-impl (331)
+com.day.cq.cq-personalization (332)
+com.day.cq.cq-polling-importer (333)
+com.day.cq.cq-replication (226)
+com.day.cq.cq-reporting (335)
+com.day.cq.cq-retriever (337)
+com.day.cq.cq-rewriter (338)
+com.day.cq.cq-search (342)
+com.day.cq.cq-search-ext (343)
+com.day.cq.cq-upgrades-executor (145)
+com.day.cq.cq-xssprotection (254)
+com.day.cq.dam.adobe-dam-idsprint (165)
+com.day.cq.dam.adobe-xmp (168)
+com.day.cq.dam.cq-dam-annotation-print (279)
+com.day.cq.dam.cq-dam-commons (284)
+com.day.cq.dam.cq-dam-core (285)
+com.day.cq.dam.cq-dam-handler (287)
+com.day.cq.dam.cq-dam-indesign (288)
+com.day.cq.dam.cq-dam-pim (292)
+com.day.cq.dam.cq-dam-s7dam (294)
+com.day.cq.dam.cq-dam-scene7 (295)
+com.day.cq.dam.cq-dam-similaritysearch (296)
+com.day.cq.dam.cq-dam-video (298)
+com.day.cq.dam.cq-dam-word (299)
+com.day.cq.dam.cq-scene7-api (339)
+com.day.cq.dam.dam-webdav-support (437)
+com.day.cq.mcm.cq-mcm-campaign (314)
+com.day.cq.mcm.cq-mcm-core (315)
+com.day.cq.mcm.cq-mcm-exacttarget-integration (317)
+com.day.cq.mcm.cq-mcm-landingpage (318)
+com.day.cq.pre-upgrade-tasks (146)
+com.day.cq.wcm.cq-msm-core (328)
+com.day.cq.wcm.cq-wcm-commons (411)
+com.day.cq.wcm.cq-wcm-content-sync (412)
+com.day.cq.wcm.cq-wcm-core (413)
+com.day.cq.wcm.cq-wcm-designimporter (414)
+com.day.cq.wcm.cq-wcm-emulator (415)
+com.day.cq.wcm.cq-wcm-foundation (416)
+com.day.cq.wcm.cq-wcm-mobile-core (419)
+com.day.cq.wcm.cq-wcm-notification (421)
+com.day.cq.wcm.cq-wcm-scripting-support (424)
+com.day.cq.wcm.cq-wcm-translation (427)
+com.day.cq.wcm.cq-wcm-workflow (430)
+com.day.cq.workflow.cq-workflow-api (433)
+com.day.cq.workflow.cq-workflow-console (434)
+com.day.cq.workflow.cq-workflow-impl (435)
+com.day.crx.sling.crx-auth-token (436)
+com.fasterxml.jackson.core.jackson-databind (458)
+
+day-commons-gfx (440)
+day-commons-jrawio (442)
+day-commons-jstl (443)
+day.commons.datasource.jdbcpool (445)
+day.commons.datasource.poolservice (446)
+javax.mail (459)
+org.apache.abdera.client (157)
+org.apache.abdera.core (158)
+org.apache.abdera.extensions-media (159)
+org.apache.abdera.extensions-opensearch (160)
+org.apache.abdera.parser (162)
+org.apache.abdera.server (163)
+org.apache.aries.jmx.api (24)
+org.apache.aries.jmx.core (25)
+org.apache.aries.jmx.whiteboard (26)
+org.apache.aries.transaction.manager (27)
+org.apache.aries.util (6)
+org.apache.cocoon.cocoon-xml (174)
+org.apache.commons.codec (77)
+org.apache.commons.commons-imaging (261)
+org.apache.felix.configadmin (7)
+org.apache.felix.coordinator (8)
+org.apache.felix.eventadmin (30)
+org.apache.felix.http.jetty (40)
+org.apache.felix.http.sslfilter (64)
+org.apache.felix.http.whiteboard (42)
+org.apache.felix.inventory (43)
+org.apache.felix.jaas (54)
+org.apache.felix.metatype (31)
+org.apache.felix.org.apache.felix.threaddump (44)
+org.apache.felix.scr (32)
+org.apache.felix.webconsole (45)
+org.apache.felix.webconsole.plugins.ds (46)
+org.apache.felix.webconsole.plugins.event (47)
+org.apache.felix.webconsole.plugins.memoryusage (48)
+org.apache.felix.webconsole.plugins.packageadmin (49)
+org.apache.httpcomponents.httpclient (37)
+org.apache.httpcomponents.httpcore (38)
+org.apache.jackrabbit.jackrabbit-api (109)
+org.apache.jackrabbit.jackrabbit-data (93)
+org.apache.jackrabbit.jackrabbit-jcr-commons (110)
+org.apache.jackrabbit.jackrabbit-jcr-rmi (111)
+org.apache.jackrabbit.jackrabbit-spi-commons (125)
+org.apache.jackrabbit.jackrabbit-webdav (455)
+org.apache.jackrabbit.oak-auth-external (95)
+org.apache.jackrabbit.oak-auth-ldap (96)
+org.apache.jackrabbit.oak-authorization-cug (97)
+org.apache.jackrabbit.oak-blob (98)
+org.apache.jackrabbit.oak-commons (99)
+org.apache.jackrabbit.oak-core (100)
+org.apache.jackrabbit.oak-jcr (101)
+org.apache.jackrabbit.oak-lucene (102)
+org.apache.jackrabbit.oak-segment-tar (103)
+org.apache.jackrabbit.oak-solr-osgi (104)
+org.apache.jackrabbit.vault (126)
+org.apache.oltu.jose.jws (464)
+org.apache.opennlp.tools (461)
+org.apache.sling.adapter (131)
+org.apache.sling.api (70)
+org.apache.sling.atom.taglib (466)
+org.apache.sling.auth.core (132)
+org.apache.sling.bundleresource.impl (467)
+org.apache.sling.caconfig.api (468)
+org.apache.sling.caconfig.impl (469)
+org.apache.sling.caconfig.spi (470)
+org.apache.sling.commons.classloader (133)
+org.apache.sling.commons.compiler (471)
+org.apache.sling.commons.fsclassloader (473)
+org.apache.sling.commons.html (474)
+org.apache.sling.commons.log (9)
+org.apache.sling.commons.log.webconsole (50)
+org.apache.sling.commons.logservice (10)
+org.apache.sling.commons.metrics (65)
+org.apache.sling.commons.mime (113)
+org.apache.sling.commons.osgi (66)
+org.apache.sling.commons.scheduler (134)
+org.apache.sling.commons.threads (114)
+org.apache.sling.datasource (55)
+org.apache.sling.discovery.base (135)
+org.apache.sling.discovery.commons (136)
+org.apache.sling.discovery.oak (137)
+org.apache.sling.discovery.support (138)
+org.apache.sling.distribution.api (475)
+org.apache.sling.distribution.core (476)
+org.apache.sling.engine (477)
+org.apache.sling.event (478)
+org.apache.sling.event.dea (479)
+org.apache.sling.extensions.webconsolesecurityprovider (115)
+org.apache.sling.hapi (480)
+org.apache.sling.hc.core (481)
+org.apache.sling.i18n (483)
+org.apache.sling.installer.console (51)
+org.apache.sling.installer.core (13)
+org.apache.sling.installer.factory.configuration (14)
+org.apache.sling.installer.provider.file (15)
+org.apache.sling.installer.provider.jcr (127)
+org.apache.sling.javax.activation (16)
+org.apache.sling.jcr.base (117)
+org.apache.sling.jcr.contentloader (128)
+org.apache.sling.jcr.davex (484)
+org.apache.sling.jcr.jcr-wrapper (118)
+org.apache.sling.jcr.registration (119)
+org.apache.sling.jcr.resource (140)
+org.apache.sling.jcr.webdav (486)
+org.apache.sling.jmx.provider (487)
+org.apache.sling.launchpad.installer (17)
+org.apache.sling.models.api (488)
+org.apache.sling.models.impl (489)
+org.apache.sling.models.jacksonexporter (490)
+org.apache.sling.resourceaccesssecurity (141)
+org.apache.sling.resourcemerger (493)
+org.apache.sling.resourceresolver (142)
+org.apache.sling.rewriter (494)
+org.apache.sling.scripting.api (143)
+org.apache.sling.scripting.core (495)
+org.apache.sling.scripting.java (496)
+org.apache.sling.scripting.javascript (497)
+org.apache.sling.scripting.jsp (498)
+org.apache.sling.scripting.jsp.taglib (499)
+org.apache.sling.scripting.jst (500)
+org.apache.sling.scripting.sightly (501)
+org.apache.sling.scripting.sightly.compiler (502)
+org.apache.sling.scripting.sightly.compiler.java (503)
+org.apache.sling.scripting.sightly.js.provider (504)
+org.apache.sling.scripting.sightly.models.provider (505)
+org.apache.sling.security (52)
+org.apache.sling.serviceusermapper (67)
+org.apache.sling.servlets.get (507)
+org.apache.sling.servlets.post (508)
+org.apache.sling.servlets.resolver (509)
+org.apache.sling.settings (18)
+org.apache.sling.startupfilter (53)
+org.apache.sling.tenant (510)
+org.apache.sling.tracer (511)
+org.apache.tika.core (87)
+org.apache.tika.parsers (88)
+org.glassfish.jersey.bundles.repackaged.jersey-guava (538)
+org.jsoup (520)
+org.mongodb.mongo-java-driver (94)
+pdfcore (81)
+pdfencryption (82)
+xtg (516)

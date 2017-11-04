@@ -1,0 +1,24 @@
+ Maven pom.xml
+ ==============
+ dependencies needed by citytechinc components.
+ 
+        
+          <dependency>
+		          <groupId>com.citytechinc.cq.cq-component-plugin</groupId>
+		          <artifactId>cq-component-annotations</artifactId>
+		          <version>4.1.2</version>
+		          <scope>provided</scope>
+		      </dependency>
+		      <dependency>
+		          <groupId>com.citytechinc.cq.cq-component-plugin</groupId>
+		          <artifactId>cq-component-maven-plugin</artifactId>
+		          <version>4.1.2</version>
+		          <scope>provided</scope>
+		      </dependency>
+		      
+		       <dependency>
+		          <groupId>javax.inject</groupId>
+		          <artifactId>javax.inject</artifactId>
+		          <version>1</version>
+		          <scope>provided</scope>
+		      </dependency>

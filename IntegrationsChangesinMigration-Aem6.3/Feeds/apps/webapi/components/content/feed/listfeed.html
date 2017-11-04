@@ -1,0 +1,26 @@
+<div data-sly-test="${properties.feeddisplayformatlist == 'events'}" data-sly-unwrap>
+	<h3>${properties.feedheader}</h3>
+	<a class="view-all listBased" href="">View all</a>
+	<div data-sly-use.feeditems="com.webapi.core.components.Feed"
+		data-sly-unwrap>
+		<div data-sly-list.feeditem="${feeditems.feedItems}" data-sly-unwrap>
+			<!-- Event-->
+	
+			<div class="event">
+				<div class="timestamp">
+					<span>${feeditem.publishDateMonth}</span> <span>${feeditem.publishDateOnlyDate}</span>
+				</div>
+				<div class="event-text">
+					<a href=""><span>${feeditem.publishDate}</span></a> 
+					<h4><a data-sly-test="${feeditem.title}" title="${feeditem.title @context='html'}" href="${feeditem.link}">${feeditem.titleCut}</a></h4>
+					<p data-sly-test="${feeditem.description}">${feeditem.descriptionCut @ context='html'}</p>
+				</div>
+			</div>
+			<!-- /Event -->
+		</div>
+	</div>
+</div>
+<script>
+ 
+	
+</script>

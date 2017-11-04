@@ -1,0 +1,10 @@
+AEM 6.0 has sling along with aem-api.jar
+for AEM 6.3 need separate sling jar dependencies to be added.
+
+
+        <dependency>
+            <groupId>org.apache.sling</groupId>
+            <artifactId>org.apache.sling.event</artifactId>
+            <version>4.2.0</version>
+            <scope>provided</scope>
+          </dependency>

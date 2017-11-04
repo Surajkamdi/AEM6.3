@@ -1,0 +1,75 @@
+<div data-sly-test.empty="${!properties.feedurl || properties.numpanelitems == '0' && wcmmode.edit }">
+  <p>Enter the feed details</p>
+</div>
+
+<div data-sly-test="${!empty || properties.numpanelitems != '0'}" data-sly-unwrap>
+	<!--/*
+	<div data-sly-test="${properties.listFrom == null || properties.listFrom == 'cards'}" data-sly-unwrap>
+		<section data-sly-include="/apps/webapi/components/feed/cardLayout.html"></section>
+	</div>
+
+	<div data-sly-test="${properties.listFrom == 'list'}" data-sly-unwrap>
+		<section data-sly-include="/apps/webapi/components/feed/listfeed.html"></section>
+	</div>
+ 
+</div>
+
+
+
+<script type='text/javascript'>
+if(carouselNewsCount == undefined){
+	   var carouselNewsCount = 0;
+}  
+if(carouselEventsCount == undefined){
+	   var carouselEventsCount = 0;
+} 
+if(carouselBlogsCount == undefined){
+	   var carouselBlogsCount = 0;
+} 
+function miniNewsCarousel(){}
+function miniEventsCarousel(){}
+function miniBlogsCarousel(){}
+</script>
+<div data-sly-test="${properties.feeddisplaycarousellayout == 'news-carousel'}" data-sly-unwrap>
+<script type='text/javascript'>
+$(function(){
+  $('.mini-news-carousel:eq('+carouselNewsCount+')').slick({
+    dots: true,
+    arrows: true,
+    infinite: false,
+    speed: 300,
+      rows: '${properties.numpanelitems @ context="scriptString"}',
+    slidesPerRow: 1,
+    // responsive: [
+    //   {
+    //     breakpoint: 768,
+    //     settings: {
+
+    //     }
+    //   }
+    // ]
+  });
+  carouselNewsCount++;
+});
+</script>
+</div>
+<div data-sly-test="${properties.feeddisplaycarousellayout == 'events-carousel'}" data-sly-unwrap>
+<script type='text/javascript'>
+$(function(){
+  $('.mini-events-carousel:eq('+carouselEventsCount+')').slick({
+    dots: true,
+    arrows: true,
+    infinite: false,
+    speed: 300,
+    rows: '${properties.numpanelitems @ context="scriptString"}',
+    slidesPerRow: 1,
+     
+  });
+  carouselEventsCount++;
+});
+</script>
+</div>
+
+</div>
+
+

@@ -1,0 +1,18 @@
+
+ERROR:
+=======
+com.adobe.cq.sightly.internal ---- CANNOT be resolved.
+
+in bundle when deploying core package bunlde shows above error.
+
+SOLUTION:
+=========
+tried < classifier >apis</ classifier it does not work. it works !!! when changed to < classifier>obfuscated-apis</ classifier >
+    
+     <dependency>
+            <groupId>com.adobe.aem</groupId>
+            <artifactId>uber-jar</artifactId>
+            <version>6.3.0</version>
+            <classifier>obfuscated-apis</classifier>
+            <scope>provided</scope>
+    </dependency>
